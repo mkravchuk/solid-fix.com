@@ -1,5 +1,8 @@
 - [Get Started](getstarted)
-- --------
+- **Links**
+- [![Github](assets/img/github.svg)Github](https://github.com/mkravchuk/solid-fix.com)
+- [![Issues](assets/img/issues2.ico)Issues](https://www.github.com/mkravchuk/solid-fix.com/issues)
+- **docsify themeable**
 - [Introduction](docsify-themeable--introduction)
 - [Quick Start](docsify-themeable--quick-start) 
 - [Themes](docsify-themeable--themes)
@@ -7,8 +10,3 @@
 - [Options](docsify-themeable--options)
 - [Markdown](docsify-themeable--markdown)
 - [Changelog](changelog)
-- **Links**
-- [![Code](assets/img/code.svg)Demo Sandbox](https://codesandbox.io/s/xv36w4695o)
-- [![Github](assets/img/github.svg)Github](https://github.com/jhildenbiddle/docsify-themeable)
-- [![NPM](assets/img/npm.svg)NPM](https://www.npmjs.com/package/docsify-themeable)
-- [![Twitter](assets/img/twitter.svg)@jhildenbiddle](http://twitter.com/jhildenbiddle)
