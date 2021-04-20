@@ -24,20 +24,63 @@ browserSync.init({
         ],
         middleware: [
             compression()
-        ]
+        ],
+        routes: {
+            '/CHANGELOG.md': './CHANGELOG.md'
+        }
     },
     serveStatic: [
         './dist/'
     ],
+    snippetOptions: {
+        rule: {
+            match: /<\/body>/i,
+            fn: function (snippet, match) {
+                // Fix CSS injection for alternate stylesheets
+                const styleSwitchFix = `
+                    <script>
+                        (function() {
+                            if (window.MutationObserver) {
+                                window.browsersyncObserver = new MutationObserver(function(mutationsList) {
+                                    mutationsList.forEach(function(mutation) {
+                                        Array.apply(null, mutation.addedNodes).forEach(function(node) {
+                                            var isLink       = node.tagName === 'LINK';
+                                            var isStylesheet = isLink && (node.getAttribute('rel') || '').indexOf('stylesheet') !== -1;
+
+                                            if (isStylesheet) {
+                                                node.disabled = !node.disabled;
+                                                node.disabled = !node.disabled;
+                                            }
+                                        });
+                                    });
+                                });
+
+                                browsersyncObserver.observe(document.documentElement, {
+                                    childList: true,
+                                    subtree: true
+                                });
+                            }
+                        })();
+                    </script>
+                `;
+
+                return snippet + styleSwitchFix + match;
+            }
+        }
+    },
     rewriteRules: [
         // Replace CDN URLs with local paths
         {
-            match  : /https:\/\/cdn\.jsdelivr\.net\/npm\/docsify-tabs@1\/dist\//g,
+            match  : /https:\/\/cdn\.jsdelivr\.net\/npm\/docsify-themeable@[\d.]*\/dist\//g,
             replace: '/'
         },
         {
-            match  : /https:\/\/cdn\.jsdelivr\.net\/npm\/docsify-tabs@1/g,
-            replace: '/docsify-tabs.min.js'
+            match  : /https:\/\/raw\.githubusercontent\.com\/mkravchuk\/solid-fix.com\/master\/CHANGELOG.md/g,
+            replace: '/CHANGELOG.md'
+        },
+        {
+            match  : /https:\/\/cdn\.jsdelivr\.net\/npm\/docsify-themeable@[\d.]*/g,
+            replace: '/js/docsify-themeable.min.js'
         }
     ]
 });

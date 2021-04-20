@@ -5,11 +5,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
-    <meta name="description" content="docsify-tabs - A docsify.js plugin for rendering tabbed content from markdown.">
+    <meta name="description" content="A delightfully simple theme system for docsify.js. Features multiple themes with rich customization options, an improved desktop and mobile experience, and legacy browser support (IE10+).">
     <meta name="google-site-verification" content="_EWJaM8G6xwMtEqemO4yN8WqSU2CaKVi3jTj0gLg48E">
-    <title>docsify-tabs - A docsify.js plugin for rendering tabbed content from markdown</title>
+    <title>Solid Fix - A delightfully simple CAD fixing system for Rhinoceros 3D</title>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css" title="Simple">
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Alternate Stylesheets -->
+    <link rel="stylesheet alternate" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css" title="Defaults">
+    <link rel="stylesheet alternate" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css" title="Simple Dark">
 
     <!-- Test Stylesheets -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"> -->
@@ -27,15 +33,16 @@
         window.$docsify = {
             // GENERAL
             // -----------------------------------------------------------------
-            name       : 'docsify-tabs',
-            repo       : 'https://github.com/jhildenbiddle/docsify-tabs',
-            homepage   : 'index.md',
-            loadSidebar: 'sidebar.md',
+            name       : 'Solid Fix',
+            repo       : 'https://github.com/mkravchuk/solid-fix.com',
+            coverpage  : '_coverpage.md',
+            homepage   : 'getstarted.md',
+            loadSidebar: '_sidebar.md',
 
             // NAVIGATION
             // -----------------------------------------------------------------
             alias: {
-                '.*?/changelog': 'https://cdn.jsdelivr.net/npm/docsify-tabs@1/CHANGELOG.md',
+                '.*?/changelog': 'https://raw.githubusercontent.com/mkravchuk/solid-fix.com/master/CHANGELOG.md',
             },
             auto2top   : true,
             maxLevel   : 3,
@@ -44,32 +51,24 @@
             // PLUGINS
             // -----------------------------------------------------------------
             executeScript: true,
-            ga    : 'UA-100100910-4',
+            ga    : 'UA-100100910-3',
             search: {
                 depth      : 3,
                 noData     : 'No results!',
                 placeholder: 'Search...'
-            },
-            tabs: {
-                // persist    : false,
-                // sync       : false,
-                // theme      : 'material',
-                // tabComments: false,
-                // tabHeadings: false
             }
         };
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
-    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1/dist/docsify-tabs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/external-script.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/ga.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/class-change@1"></script>
-    <script>
-        // Initialize the default attribute listener
-        classChange.attrs();
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
 </body>
 </html>

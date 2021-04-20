@@ -11,6 +11,7 @@ module.exports = {
         "sourceType" : "module"
     },
     "plugins": [
+        "html"
     ],
     "rules": {
         "array-bracket-spacing"      : ["error", "never"],

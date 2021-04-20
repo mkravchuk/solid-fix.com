@@ -1,71 +1,72 @@
 {
-  "name": "docsify-tabs",
-  "version": "1.4.4",
-  "description": "A docsify.js plugin for rendering tabbed content from markdown",
-  "author": "John Hildenbiddle",
+  "name": "solid-fix",
+  "version": "0.3",
+  "description": "A delightfully simple CAD fixing system for Rhinoceros 3D",
+  "author": "Myroslav Kravchuk",
   "license": "MIT",
-  "homepage": "https://jhildenbiddle.github.io/docsify-tabs/",
+  "homepage": "https://mkravchuk.github.io/solid-fix.com/",
   "repository": {
     "type": "git",
-    "url": "git+https://jhildenbiddle@github.com/jhildenbiddle/docsify-tabs.git"
+    "url": "git+https://mkravchuk@github.com/mkravchuk/solid-fix.com.git"
   },
   "bugs": {
-    "url": "https://github.com/jhildenbiddle/docsify-tabs/issues"
+    "url": "https://github.com/mkravchuk/solid-fix.com/issues"
   },
   "keywords": [
-    "docs",
-    "docsify",
-    "docsify.js",
-    "documentation",
-    "generator",
-    "javascript",
-    "js",
-    "markdown",
-    "md",
-    "plugin",
-    "tab",
-    "tabs"
+    "CAD",
+    "Fix",
+    "Nurbs",
+    "Rhinoceros",
   ],
   "browserslist": [
-    "ie >= 10"
+    "last 2 versions",
+    "not dead"
   ],
   "files": [
-    "dist"
+    "dist",
+    "src/scss"
   ],
-  "main": "dist/docsify-tabs.js",
-  "unpkg": "dist/docsify-tabs.min.js",
+  "main": "dist/js/docsify-themeable.js",
+  "unpkg": "dist/js/docsify-themeable.min.js",
   "scripts": {
     "prepare": "run-s clean build",
-    "build": "rollup -c",
-    "clean": "rimraf dist/*",
+    "build": "npm-run-all build:scss --parallel build:js build:pcss",
+    "build:js": "rollup -c",
+    "build:pcss": "postcss build/css/**/*.css --dir dist/css --use postcss-remove-null postcss-discard-empty postcss-flexbugs-fixes autoprefixer --map",
+    "build:scss": "node-sass --output-style compressed src/scss/themes -o build/css --source-map true --source-map-contents true --include-path node_modules",
+    "clean": "rimraf build/* dist/* docs/css docs/js",
     "serve": "node server.js",
     "start": "run-p watch serve",
-    "watch": "run-p 'build -- -w'",
-    "version": "run-s build"
+    "watch": "run-p 'build:* -- -w'",
+    "prewatch": "npm run build:scss",
+    "version": "npm run prepare"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "@babel/preset-env": "^7.9.6",
-    "@rollup/plugin-commonjs": "^11.1.0",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-json": "^4.0.3",
-    "@rollup/plugin-node-resolve": "^7.1.3",
-    "autoprefixer": "^9.7.6",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "autoprefixer": "^9.8.6",
     "browser-sync": "^2.26.3",
     "compression": "^1.7.3",
-    "eslint": "^7.0.0",
+    "css-vars-ponyfill": "^2.3.0",
+    "eslint": "^7.10.0",
+    "eslint-plugin-html": "^6.1.0",
+    "include-media": "^1.4.9",
     "lodash.merge": "^4.6.1",
-    "node-sass": "^4.14.1",
+    "node-sass": "^4.14.0",
     "npm-run-all": "^4.1.5",
-    "postcss-custom-properties": "^9.1.1",
+    "postcss-cli": "^7.1.2",
+    "postcss-discard-empty": "^4.0.1",
     "postcss-flexbugs-fixes": "^4.2.1",
-    "postcss-import": "^12.0.1",
+    "postcss-remove-null": "^1.2.1",
     "rimraf": "^3.0.2",
-    "rollup": "^2.8.2",
+    "rollup": "^2.28.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-eslint": "^7.0.0",
-    "rollup-plugin-postcss": "^3.1.1",
-    "rollup-plugin-sass": "^1.0.1",
-    "rollup-plugin-uglify": "^6.0.0"
+    "rollup-plugin-uglify": "^6.0.2",
+    "sass-utilities": "0.0.4"
   },
   "dependencies": {}
 }

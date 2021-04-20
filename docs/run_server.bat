@@ -1,1 +1,0 @@
-call docsify serve . --open

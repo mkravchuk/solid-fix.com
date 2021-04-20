@@ -2,26 +2,25 @@
 // =============================================================================
 const path = require('path');
 
-import babel        from 'rollup-plugin-babel';
-import commonjs     from '@rollup/plugin-commonjs';
-import { eslint }   from 'rollup-plugin-eslint';
-import json         from '@rollup/plugin-json';
-import merge        from 'lodash.merge';
-import pkg          from './package.json';
-import postcss      from 'rollup-plugin-postcss';
-import resolve      from '@rollup/plugin-node-resolve';
-import { uglify }   from 'rollup-plugin-uglify';
+import babel       from 'rollup-plugin-babel';
+import commonjs    from '@rollup/plugin-commonjs';
+import { eslint }  from 'rollup-plugin-eslint';
+import json        from '@rollup/plugin-json';
+import merge       from 'lodash.merge';
+import pkg         from './package.json';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+import { uglify }  from 'rollup-plugin-uglify';
 
 
 // Settings
 // =============================================================================
 // Copyright
-const currentYear  = (new Date()).getFullYear();
-const releaseYear  = 2018;
+const currentYear = (new Date()).getFullYear();
+const releaseYear = 2018;
 
 // Output
 const entryFile  = path.resolve(__dirname, 'src', 'js', 'index.js');
-const outputFile = path.resolve(__dirname, 'dist', `${pkg.name}.js`);
+const outputFile = path.resolve(__dirname, 'dist', 'js', `${pkg.name}.js`);
 
 // Banner
 const bannerData = [
@@ -35,7 +34,7 @@ const bannerData = [
 // Plugins
 const pluginSettings = {
     eslint: {
-        exclude       : ['node_modules/**', './package.json', './src/**/*.{css,scss}'],
+        exclude       : ['node_modules/**', './package.json'],
         throwOnWarning: false,
         throwOnError  : true
     },
@@ -48,18 +47,6 @@ const pluginSettings = {
                     browsers: ['ie >= 10']
                 }
             }]
-        ]
-    },
-    postcss: {
-        inject: {
-            insertAt: 'top'
-        },
-        minimize: true,
-        plugins : [
-            require('postcss-import')(),
-            require('autoprefixer')(),
-            require('postcss-custom-properties')(),
-            require('postcss-flexbugs-fixes')()
         ]
     },
     uglify: {
@@ -88,15 +75,14 @@ const pluginSettings = {
 const config = {
     input : entryFile,
     output: {
-        banner   : `/*!\n * ${ bannerData.join('\n * ') }\n */`,
         file     : outputFile,
+        banner   : `/*!\n * ${ bannerData.join('\n * ') }\n */`,
         sourcemap: true
     },
     plugins: [
-        resolve(),
+        nodeResolve(),
         commonjs(),
         json(),
-        postcss(pluginSettings.postcss),
         eslint(pluginSettings.eslint),
         babel(pluginSettings.babel)
     ],
