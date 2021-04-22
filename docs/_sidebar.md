@@ -1,5 +1,6 @@
 - [Get Started](getstarted)
 - [Panels](panels)
+- [Contact us](contactus)
 - [NOTES](notes)
 - **Links**
 - [![Github](img/github.svg)Github](https://github.com/mkravchuk/solid-fix.com)
