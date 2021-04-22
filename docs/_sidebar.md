@@ -1,7 +1,9 @@
 - [Get Started](getstarted)
+- [Panels](panels)
+- [NOTES](notes)
 - **Links**
-- [![Github](assets/img/github.svg)Github](https://github.com/mkravchuk/solid-fix.com)
-- [![Issues](assets/img/issues2.ico)Issues](https://www.github.com/mkravchuk/solid-fix.com/issues)
+- [![Github](img/github.svg)Github](https://github.com/mkravchuk/solid-fix.com)
+- [![Issues](img/issues2.ico)Issues](https://www.github.com/mkravchuk/solid-fix.com/issues)
 - **docsify themeable**
 - [Introduction](docsify-themeable--introduction)
 - [Quick Start](docsify-themeable--quick-start) 

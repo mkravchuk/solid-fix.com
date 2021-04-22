@@ -15,8 +15,8 @@ customized theme.
 ```
 
 <figure class="thumbnails">
-    <img src="assets/img/theme-defaults-cover.png" alt="Screenshot of coverpage" title="Cover page">
-    <img src="assets/img/theme-defaults-content.png" alt="Screenshot of content" title="Content">
+    <img src="img/theme-defaults-cover.png" alt="Screenshot of coverpage" title="Cover page">
+    <img src="img/theme-defaults-content.png" alt="Screenshot of content" title="Content">
 </figure>
 
 ### Simple
@@ -34,8 +34,8 @@ state.
 ```
 
 <figure class="thumbnails">
-    <img src="assets/img/theme-simple-cover.png" alt="Screenshot of coverpage" title="Cover page">
-    <img src="assets/img/theme-simple-content.png" alt="Screenshot of content" title="Content">
+    <img src="img/theme-simple-cover.png" alt="Screenshot of coverpage" title="Cover page">
+    <img src="img/theme-simple-content.png" alt="Screenshot of content" title="Content">
 </figure>
 
 ### Simple Dark
@@ -51,6 +51,6 @@ A modified version of the Simple theme featuring a dark color scheme.
 ```
 
 <figure class="thumbnails">
-    <img src="assets/img/theme-simple-dark-cover.png" alt="Screenshot of coverpage" title="Cover page">
-    <img src="assets/img/theme-simple-dark-content.png" alt="Screenshot of content" title="Content">
+    <img src="img/theme-simple-dark-cover.png" alt="Screenshot of coverpage" title="Cover page">
+    <img src="img/theme-simple-dark-content.png" alt="Screenshot of content" title="Content">
 </figure>
