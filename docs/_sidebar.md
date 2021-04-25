@@ -1,4 +1,5 @@
 - [Get Started](getstarted)
+- [Showcase](showcase)
 - [Panels](panels)
 - [Contact us](contactus)
 - [NOTES](notes)
