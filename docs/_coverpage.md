@@ -1,4 +1,4 @@
-![](/img/fixSolidFixMain.png)
+![](img/fixSolidFixMain.png)
 
 
 > A delightfully simple CAD fixing system for [Rhinoceros 3D](https://www.rhino3d.com)
