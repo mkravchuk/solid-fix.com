@@ -46,3 +46,5 @@
 - Real-time topology to quickly highlight surfaces was not properly connected
 - Висока автоматизація ітеративної роботи
 - Висока інформативність
+
+
