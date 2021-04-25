@@ -3,8 +3,9 @@
 - [Contact us](contactus)
 - [NOTES](notes)
 - **Links**
-- [![Github](img/github.svg)Github](https://github.com/mkravchuk/solid-fix.com)
-- [![Issues](img/issues2.ico)Issues](https://www.github.com/mkravchuk/solid-fix.com/issues)
+- [![](img/github.svg)Github](https://github.com/mkravchuk/solid-fix.com)
+- [![](img/issues2.ico)Issues](https://github.com/mkravchuk/solid-fix.com/issues)
+- [![](img/github.svg)Web on Github](https://mkravchuk.github.io/solid-fix.com/)
 - **docsify themeable**
 - [Introduction](docsify-themeable--introduction)
 - [Quick Start](docsify-themeable--quick-start) 

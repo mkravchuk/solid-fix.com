@@ -9,14 +9,14 @@
  - [Tricks Panel](#tricks-panel) - Різні утиліти для пришвидшення роботи
 
 <figure class="thumbnails">
-    <img src="img/Panels/Issues/IssuesPanel.png" ref="#issues-panel" alt="Screenshot" title="Issues Panel">
-    <img src="img/Panels/Objects/ObjectsPanel.png" alt="Screenshot" title="Objects Panel">
-    <img src="img/Panels/Files/FilesPanel.png" alt="Screenshot" title="Files Panel">
+    <img src="img/Panels/Issues/IssuesPanel.png" ref="#issues-panel" title="Issues Panel">
+    <img src="img/Panels/Objects/ObjectsPanel.png" title="Objects Panel">
+    <img src="img/Panels/Files/FilesPanel.png" title="Files Panel">
 </figure>
 <figure class="thumbnails">
-    <img src="img/Panels/Mesh/MeshPanel.png" alt="Screenshot" title="Mesh Panel">
-    <img src="img/Panels/Topology/TopologyPanel.png" alt="Screenshot" title="Topology Panel">
-    <img src="img/Panels/Tricks/RhinoTricksPanel.png" alt="Screenshot" title="Tricks Panel">
+    <img src="img/Panels/Mesh/MeshPanel.png" title="Mesh Panel">
+    <img src="img/Panels/Topology/TopologyPanel.png" title="Topology Panel">
+    <img src="img/Panels/Tricks/RhinoTricksPanel.png" title="Tricks Panel">
 </figure>
 
 ## Issues Panel
@@ -27,7 +27,7 @@
 
 Пошуки та виправлення обчислюються з використанням усіх ядер ЦП для максимальної продуктивності. Інтуїтивно зрозумілий рядок прогресу відображатиме поточний прогрес і дозволяє перервати роботу, якщо це займе багато часу.
 
-<img src="img/Panels/Issues/IssuesPanel.png" alt="Screenshot" style="width:100%"/>
+<img src="img/Panels/Issues/IssuesPanel.png" style="width:100%"/>
 
 Button | Function
 --- | --- 
@@ -48,7 +48,7 @@ Button | Function
 Коли пошук питань здійснювався на панелі SerchForIssues, також відображаються проблеми, пов’язані з відповідним об’єктом.
 Конфігуровані параметри дозволяють бачити багато властивостей об'єктів у вікні перегляду.
 
-<img src="img/Panels/Objects/ObjectsPanel.png" alt="Screenshot" style="width:100%"/>
+<img src="img/Panels/Objects/ObjectsPanel.png" style="width:100%"/>
 
 Button | Function
 --- | --- 
@@ -71,7 +71,7 @@ Button | Function
 Панель файлів позволяє швидко відкривати файли а також бачити наочно в яких файлах є помилки.
 Також це суттєво пришвидшує тестування на великих обємах моделей.
 
-<img src="img/Panels/Files/FilesPanel.png" alt="Screenshot" style="width:100%"/>
+<img src="img/Panels/Files/FilesPanel.png" style="width:100%"/>
 
 Button | Function
 --- | --- 
@@ -98,7 +98,7 @@ Button | Function
 Панель Mesh дозволяє генерувати нову сітку з поверхонь та зберігати її у форматі файлу OBJ.
 Ця панель допомагає автоматизувати модель перетворення в інші редактори сіток, такі як 3ds Max.
 
-<img src="img/Panels/Mesh/MeshPanel.png" alt="Screenshot" style="width:100%"/>
+<img src="img/Panels/Mesh/MeshPanel.png" style="width:422px"/>
 
 
 ## Topology Panel
@@ -109,7 +109,7 @@ Button | Function
 Топологія оновлюється автоматично кожного разу, коли використовується сцена оновлення, і тому не вимагає уваги користувача.
 Хоча для автоматичного оновлення проблему на панелі "Проблеми" слід оновлювати вручну.
 
-<img src="img/Panels/Topology/TopologyPanel.png" alt="Screenshot" style="width:100%"/>
+<img src="img/Panels/Topology/TopologyPanel.png" style="width:422px"/>
 
 Button | Function | Screenshot
 --- | ---  | --- 
@@ -121,13 +121,13 @@ Button | Function | Screenshot
 
 Панель Tricks розширює Rhino за допомогою деяких невеликих функцій, які зроблять роботу приємнішою.
 
-<img src="img/Panels/Tricks/RhinoTricksPanel.png" alt="Screenshot" style="width:100%"/>
+<img src="img/Panels/Tricks/RhinoTricksPanel.png" style="width:422px"/>
 
 Option | Function | Screenshot
 --- | --- | --- 
 Load document at Rhino startup | Дозвольте запустити Rhino із попередньо завантаженою моделлю. Те саме, що кнопка StartupFile на панелі Файли.  |
 Change rotation point on Mouse-Double-Click | Дозволяє швидко змінювати точку обертання, натиснувщи двічі клацанням миші. Зміна точки обертання дозволить краще зрозуміти місцеву проблему та швидше її вирішити.  |
 Restore DisplayMode on document load | Rhino починається з режиму відображення за замовчуванням і показує 4 перегляди. Ця опція дозволяє відновити останній вибраний режим відображення. Дуже корисно для розробників, коли дуже багато разів на день потрібно запускати Rhino.  |
-Show rotation point in viewport | Показати точку обертання в порту вигляду, щоб покращити орієнтацію. | <img src="img/Panels/Tricks/ShowRotationPoint.png" alt="Screenshot" style="width:50%"/>
-Show selection info in viewport | Покажіть у лівому нижньому куті, які об’єкти виділено та до яких груп вони належать. | <img src="img/Panels/Tricks/ShowSelectedInfo.png" alt="Screenshot" style="width:50%"/>  
-Show how many is hidden in viewport | У верхньому лівому куті покажіть інформацію про приховану кількість поверхонь. Це допоможе уникнути збереження файлів із прихованими об'єктами і, отже, покращує загальний робочий процес. | <img src="img/Panels/Tricks/ShowHiddenObjectsCount.png" alt="Screenshot" style="width:50%"/>  
+Show rotation point in viewport | Показати точку обертання в порту вигляду, щоб покращити орієнтацію. | <img src="img/Panels/Tricks/ShowRotationPoint.png" style="width:50%"/>
+Show selection info in viewport | Покажіть у лівому нижньому куті, які об’єкти виділено та до яких груп вони належать. | <img src="img/Panels/Tricks/ShowSelectedInfo.png" style="width:50%"/>  
+Show how many is hidden in viewport | У верхньому лівому куті покажіть інформацію про приховану кількість поверхонь. Це допоможе уникнути збереження файлів із прихованими об'єктами і, отже, покращує загальний робочий процес. | <img src="img/Panels/Tricks/ShowHiddenObjectsCount.png" style="width:50%"/>  
