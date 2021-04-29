@@ -1,8 +1,8 @@
-- [Get Started](getstarted)
-- [Showcase](showcase)
-- [Panels](panels)
-- [Contact us](contactus)
-- [NOTES](notes)
+- [Огляд](getstarted)
+- [Демонстрація](showcase)
+- [Панелі](panels)
+- [Контакти](contactus)
+- [DEBUG notes](notes)
 - **Links**
 - [![](img/github.svg)Github](https://github.com/mkravchuk/solid-fix.com)
 - [![](img/issues2.ico)Issues](https://github.com/mkravchuk/solid-fix.com/issues)
