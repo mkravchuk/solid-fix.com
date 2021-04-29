@@ -1,10 +1,9 @@
 # solid-fix.com
+source code for solid-mesh.com
 
-## Contact
-
+# Contact
 +380687412210
 
-## License
-
+# License
 Copyright (c) Myroslav Kravchuk
 
