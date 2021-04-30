@@ -10,8 +10,8 @@
 
 <figure class="thumbnails">
     <img src="img/Panels/Issues/IssuesPanel.png" ref="#issues-panel" title="Issues Panel">
-    <img src="img/Panels/Objects/ObjectsPanel.png" title="Objects Panel">
-    <img src="img/Panels/Files/FilesPanel.png" title="Files Panel">
+    <img src="img/Panels/Objects/ObjectsPanel.png" ref="#objects-panel" title="Objects Panel">
+    <img src="img/Panels/Files/FilesPanel.png" ref="#files-panel" title="Files Panel">
 </figure>
 <figure class="thumbnails">
     <img src="img/Panels/Mesh/MeshPanel.png" title="Mesh Panel">
