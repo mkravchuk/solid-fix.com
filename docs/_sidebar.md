@@ -2,11 +2,11 @@
 - [Демонстрація](showcase)
 - [Панелі](panels)
 - [Контакти](contactus)
-- [DEBUG notes](notes)
 - **Links**
 - [![](img/github.svg)Github](https://github.com/mkravchuk/solid-fix.com)
 - [![](img/issues2.ico)Issues](https://github.com/mkravchuk/solid-fix.com/issues)
 - [![](img/github.svg)Web on Github](https://mkravchuk.github.io/solid-fix.com/)
+<!--
 - **docsify themeable**
 - [Introduction](docsify-themeable--introduction)
 - [Quick Start](docsify-themeable--quick-start) 
@@ -15,3 +15,5 @@
 - [Options](docsify-themeable--options)
 - [Markdown](docsify-themeable--markdown)
 - [Changelog](changelog)
+- [DEBUG notes](notes)
+-->
